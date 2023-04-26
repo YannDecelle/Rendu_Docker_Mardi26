@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "conversations",
+  "info": {
+    "singularName": "conversation",
+    "pluralName": "conversations",
+    "displayName": "conversation",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Conversation": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::message.message",
+      "mappedBy": "conversations"
+    }
+  }
+}
